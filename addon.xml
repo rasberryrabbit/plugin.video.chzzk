@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.chzzk" version="0.1.0" name="CHZZK" provider-name="Community">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+        <import addon="script.module.requests" version="2.27.1"/>
+        <import addon="inputstream.adaptive" version="2.4.3" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/addon_runner.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <assets>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.jpg</fanart>
+        </assets>
+        <news>
+[CHZZK v0.1.0 - 2026-10-21]
+[add] 초기 버전 - CHZZK (네이버 라이브 스트리밍) Kodi 애드온
+[add] 라이브 스트림 시청 (HLS)
+[add] VOD (다시보기) 재생
+[add] 클립 재생
+[add] 채널 검색
+[add] 인기 라이브 스트림 목록
+[add] 카테고리별 탐색
+[add] 팔로잉 목록 (NID_AUT/NID_SES 인증 필요)
+[add] 한국어/영어 지원
+[add] 1080p 지원 (인증 시)
+        </news>
+        <platform>all</platform>
+        <source>https://github.com/community/plugin.video.chzzk</source>
+        <license>GPL-3.0-only</license>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <summary lang="ko_KR">네이버 CHZZK 라이브 스트리밍</summary>
+        <summary lang="en_GB">Naver CHZZK Live Streaming</summary>
+        <description lang="ko_KR">네이버 CHZZK의 라이브 스트림, 다시보기, 클립을 Kodi에서 시청하세요. 한국 스트리머들의 방송을 TV에서 즐기세요.</description>
+        <description lang="en_GB">Watch live streams, VODs, and clips from Naver CHZZK. Enjoy Korean streamers' broadcasts on your TV.</description>
+        <disclaimer lang="ko_KR">비공식 애드온입니다. CHZZK는 네이버의 상표입니다. 19금 콘텐츠는 로그인이 필요합니다.</disclaimer>
+        <disclaimer lang="en_GB">Unofficial addon. CHZZK is a trademark of Naver. Adult content requires login.</disclaimer>
+    </extension>
+</addon>
